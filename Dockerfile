@@ -15,6 +15,7 @@ WORKDIR /app
 COPY . .
 
 WORKDIR /app/client
+RUN env
 RUN npm run build
 
 WORKDIR /app
